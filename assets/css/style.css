@@ -1,0 +1,45 @@
+/* @import "login.css"; */
+
+body {
+    margin: 0;
+    
+}
+
+
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 200px 500px;
+    grid-template-rows: 15% 1fr 10%;
+
+    grid-template-areas: 
+    "header header header "
+    "main main aside"
+    "footer footer footer";
+}
+
+header {
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-area: header;
+}
+
+main {
+    background-color: blueviolet;
+    grid-column: 1/2;
+    grid-area: main;
+}
+
+aside {
+    background-color: palevioletred;
+    grid-column: 2/4;
+    grid-area: aside;
+}
+
+footer {
+    background-color: chartreuse;
+    grid-column: 1/4;
+    grid-area: footer;
+}
